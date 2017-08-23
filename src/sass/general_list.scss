@@ -1,0 +1,103 @@
+@charset "utf-8";
+@import "../../node_modules/mixins-sass/src/mixins";
+@import "../mui/mixins.scss";
+
+.general_list{
+	.search_wrap{
+		background-color: #fff;
+		dl{
+			@include rem(height,94px);
+			border-bottom:1px solid #eee;
+			@include rem(font-size,28px);
+			@include rem(line-height,94px);
+			@include rem(padding-left,24px);
+			// @include flexbox();
+			dt{
+				@include rem(font-size,30px);
+				color: #333;
+				@include rem(max-width,152px);
+				white-space:nowrap;
+				// @include rem(max-width,636px);
+				// @include rem(max-width,120px);
+				// flex:3;
+				// -webkit-flex: 3;
+				overflow: hidden;
+			}
+			dd{
+				display: inline-block;
+				@include rem(margin-right,16px);
+				a{	
+					@include rem(padding,6px 12px);
+					border: 1px solid #fff;
+					color: #666;
+					&.active{
+						border-color: #2883e0;
+						color: #2883e0;
+						@include rem(border-radius,5px);
+					}
+				}
+			}
+			.item_box{
+				// flex:7;
+				// -webkit-flex: 7;
+				@include rem(width,612px);
+				overflow-y:hidden;
+				overflow-x:scroll; 
+				white-space:nowrap;
+				&::-webkit-scrollbar{
+				  display: none;
+				}
+			}
+			.tag_select{
+				@include rem(width,560px);
+			}
+			.searche_btn{
+				display: block;
+				@include rem(width,134px);
+				@include rem(height,50px);
+				background-color: #2883e0;
+				color: #fff;
+				@include rem(border-radius,5px);
+				@include rem(margin,0 auto);
+				@include rem(line-height,50px);
+				text-align: center;
+			}
+		}
+		.confirm{
+			@include rem(padding,25px 0);
+			height: auto;
+		}
+	}
+	.class_list{
+		border: 0 none;
+		.common_title{
+			@include rem(padding,20px 24px 0);
+		}
+		.tab_nav{
+			a{
+				@include rem(font-size,28px);
+				color: #333;
+				display: inline-block;
+				@include rem(margin-right,10px);
+				@include rem(padding, 0 15px 12px);
+				&.active{
+					color: #2883e0;
+					@include rem(margin-bottom,-1px);
+					@include rem(border-bottom,5px solid #2883e0);
+				}
+			}
+		}
+		.title_box{
+			@include rem(margin-top,3px);
+		}
+		.class_video{
+			border-bottom: 1px solid #e7e7e7;
+		}
+	}
+	.tips{
+		text-align: center;
+		@include rem(margin,100px auto);
+		@include rem(font-size,30px);
+		color: #999999;
+	}
+}

@@ -1,0 +1,184 @@
+@charset "utf-8";
+@import "../../node_modules/mixins-sass/src/mixins";
+@import "../mui/mixins.scss";
+
+/**
+ * 首页样式
+ */
+.home_page{
+	.follow{
+		background: url('../images/follow.png') no-repeat;
+		background-size: 100%;
+		@include rem(width,138px);
+		@include rem(height,138px);
+		position: fixed;
+		@include rem(right,24px);
+		bottom: 10%;
+	}
+	.home_title{
+		background:#fff url('../images/title.png') no-repeat center center;
+		width: 100%;
+		@include rem(height,132px);
+		@include rem(background-size,auto 97px);
+		border-bottom: 1px solid #e7e7e7; 
+	}
+	.index_num{
+		@include flexbox();
+		@include rem(padding,20px 0);
+		@include rem(margin-top,20px);
+		background-color: #fff;
+		border-bottom: 1px solid #e7e7e7; 
+		.index_item{
+			margin: auto; 
+		    width: 33.33333%;
+		    border-right: 1px solid #ddd;
+		    text-align: center;
+		    &:last-child{
+		        border: 0 none;
+		    }
+		    .title{
+		    	@include rem(font-size,24px);
+    		    color: #333333;
+    		}
+    		.data{
+    			@include rem(font-size,36px);
+    		    @include rem(margin,3px 0);
+    		    color: #ff3d3e;
+    		    background: url('../images/data_up.png') no-repeat;
+    		    @include rem(background-position,32px center);
+    		    @include rem(background-size,17px 15px);
+    		}
+    		.data_down{
+    		    color: #009900;
+    		    background: url('../images/data_down.png') no-repeat;
+    		    @include rem(background-position,26px center);
+    		    @include rem(background-size,17px 15px);
+    		}
+    		.txt{
+    			@include rem(font-size,24px);
+    		    color: #ff3d3e;
+    		}
+    		.green{
+    			color: #009900;
+    		}
+		}
+	}
+	.nav_box{
+		@include flexbox();
+		@include rem(padding,32px 24px);
+		border-bottom: 1px solid #e7e7e7; 
+		background-color: #fff;
+		@include flex-between();
+		@include rem(margin-top,20px);
+		a{
+			display: block;
+		    @include rem(width,220px);
+		    // @include rem(height,90px);
+		    @include rem(line-height,90px);
+		    text-align: center;
+		    @include rem(border-radius,5px);
+		    @include rem(font-size,26px);
+		    color: #222;
+		    // &:active{
+		    // 	color: #222;
+		    // }
+		}
+		i{
+			display: inline-block;
+			@include rem(width,104px);
+			@include rem(height,104px);	
+			vertical-align: middle;
+		}
+		p{
+			@include rem(line-height,26px);
+			@include rem(margin-top,20px);
+		}
+		.class_icon{
+			background: url("../images/all_class.png") no-repeat;
+			background-size: 100%;
+		}
+		.teacher_icon{
+			background: url("../images/all_teacher.png") no-repeat;
+			background-size: 100%;
+		}
+		.my_class_icon{
+			background: url("../images/my_class.png") no-repeat;
+			background-size: 100%;
+		}
+	}
+	.vip_btn{
+		display: block;
+		width: 100%;
+		@include rem(height,98px);
+		background:linear-gradient(45deg, #ff7209 20%, #ffa409); 
+		background:-webkit-linear-gradient(45deg, #ff7209 20%, #ffa409);
+		@include rem(margin,20px 0);
+		@include rem(line-height,98px);
+		text-align: center;
+		span{
+			@include rem(font-size,30px);
+			color: #fff;
+			display: inline-block;
+			background:url('../images/vip_mz.png') no-repeat left center;
+			@include rem(padding-left, 98px);
+			@include rem(background-size,auto 42px);
+		}
+	}
+	.partner_wrap{
+		background-color: #fff;
+		border-bottom: 1px solid #e7e7e7; 
+		@include rem(margin-top,20px);
+		@include rem(padding,0 24px);
+		.center_title{
+			@include rem(font-size,30px);
+			color: #333333;
+			text-align: center;
+			@include rem(line-height,72px);
+			font-weight: normal;
+		}
+		.partner_list{
+			@include rem(margin-left,-28px);
+			.item_list{
+				@include rem(width,154px);
+				@include rem(height,55px);
+				@include rem(margin-bottom,20px);
+				@include rem(margin-left,28px);
+				img{
+					@include rem(width,154px);
+					@include rem(height,55px);
+					border:1px solid #dcdbdb;
+				}
+			}
+		}
+	}
+	.footer{
+		background-color: #fff;
+		@include rem(margin-top,20px);
+		@include rem(padding,30px 0);
+		text-align: center;
+		@include rem(font-size,24px);
+		color: #323232;
+	}
+}
+
+.home_page .agreementMask .word{
+	@include rem(width,568px);
+	@include rem(height,446px);
+	.wordContent{
+		padding: 0;
+		border-bottom: 0 none;
+	}
+	img{
+		@include rem(width,290px);
+		@include rem(height,290px);
+		@include rem(margin,50px auto 30px);
+		display: block;
+	}
+	p{
+		text-align: center;
+		@include rem(font-size,24px);
+		color: #323232;
+	}
+}
+
+

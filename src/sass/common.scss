@@ -1,0 +1,672 @@
+/**
+ * 系统公用样式组件表
+ */
+@charset "utf-8";
+
+@import "../../node_modules/mixins-sass/src/mixins";
+// @import "../mui/variables.scss";
+@import "../mui/mixins.scss";
+
+//避免vue加载的时候出现 {{}}
+[v-cloak]{
+	visibility: hidden;
+}
+//转场content
+.class-transition-content{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.pull-left {
+  float: left
+}
+
+.pull-right {
+  float: right
+}
+
+.clearfix {
+  clear: both;
+  zoom: 1
+}
+
+.clearfix:after {
+  clear: both;
+  display: block;
+  height: 0;
+  font-size: 0;
+  content: ".";
+  visibility: hidden
+}
+
+//加载更多
+.page-infinite-loading{
+  text-align: center;
+  @include rem(line-height,60px);
+  @include rem(height,60px);
+  @include rem(font-size,24px);
+  padding: 5px 0;
+  div{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+}
+
+//全数字或字母自动换行
+.word-break{
+  word-wrap:break-word;
+  word-break:break-all;
+}
+a[title="站长统计"]{
+  display: none;
+}
+//顶部banner
+.top_banner{
+  width: 100%;
+  @include rem(height,300px);
+  position: relative;
+  .item_btn{
+    position: absolute;
+    @include rem(bottom,24px);
+    @include rem(right,24px);
+  }
+  a{
+    display: block;
+  }
+  .banner_img{
+    display: block;
+    background-position: center;
+    background-size: 100% auto;
+    width: 100%;
+    @include rem(height,300px);
+  }
+  img{
+    width: 100%;
+    @include rem(height,300px);
+  }
+}
+
+//通用标题
+.common_title{
+  @include rem(padding,20px 24px);
+  border-bottom: 1px solid #e7e7e7; 
+  background-color: #fff;
+  .title_box{
+    // @include rem(width,536px);
+    span{
+      @include rem(font-size,24px);
+      color: #2883e0;
+      display: inline-block;
+      vertical-align: bottom;
+      @include rem(width,420px!important);
+      @include text-overflow(1);
+      @include rem(margin-left,5px);
+    }
+  }
+  .more_btn{
+    @include rem(font-size, 24px);
+    color: #999;
+    background: url(../images/title_arrow.png) no-repeat right center;
+    @include rem(padding-right,18px);
+    @include rem(background-size,10px auto);
+  }
+  h2{
+    @include rem(font-size,28px);
+    color: #333;
+    font-weight: normal;
+    @include rem(width,580px!important);
+    @include text-overflow(1);
+    display: inline-block;
+    vertical-align: bottom;
+  }
+}
+
+//通用视频列表
+.class_list{
+  @include rem(margin-top,20px);
+  background-color: #fff;
+  border-bottom: 1px solid #e7e7e7; 
+  .class_video{
+    @include flexbox();
+    flex-flow:row wrap;
+    @include flex-between();
+    @include rem(padding,30px 24px 0);
+    .class_item{
+      @include rem(width,345px);
+      @include rem(height,300px);
+      @include rem(margin-bottom,30px);
+      display: block;
+      .class_title{
+        @include rem(font-size,28px);
+        color: #333;
+        @include rem(margin-top,10px);
+        @include text-overflow(2);
+      }
+      .video_box{
+        position: relative;
+        @include rem(height,207px);
+        img{
+          @include rem(width,345px);
+          @include rem(height,207px);
+        }
+        .vip_video{
+          position: absolute;
+          top: 0;
+          right: 0;
+          @include rem(width,78px);
+          @include rem(height,78px);
+          background: url(../images/vip_class.png) no-repeat center;
+          background-size: 100%;
+        }
+        .class_info{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          @include rem(padding,0 10px);
+          @include rem(height,50px);
+          background-color : rgba(0, 0, 0, 0.5);
+          filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000, endColorstr=#50000000);
+        }
+        p{
+          @include rem(font-size,24px);
+          color: #fff;
+          @include rem(line-height,50px);
+        }
+        .video_title{
+          @include rem(width,215px!important);
+          @include text-overflow(1);
+        }
+        .video_icon{
+          background: url(../images/video_icon.png) no-repeat left center;
+          @include rem(background-size,25px auto);
+          @include rem(padding-left,32px);
+        }
+      }
+    }
+  }
+}
+
+//专辑列表通用样式
+.album_item{
+  @include rem(padding,0 24px 30px);
+  background-color: #fff;
+  position: relative;
+  display: block;
+  h2{
+    @include rem(font-size,32px);
+    color: #333333;
+    @include rem(line-height,90px);
+    @include text-overflow(1);
+  }
+  .album_info{
+    @include flexbox();
+    img{
+      @include rem(width,250px);
+      @include rem(height,150px);
+    }
+    .txt_box{
+      flex:1;
+      @include rem(margin-left,20px);
+      p{
+        @include rem(font-size,24px);
+        color: #666666;
+        @include rem(line-height,36px);
+        @include rem(height,110px);
+        @include text-overflow(3);
+      }
+      .price_wrap{
+        @include rem(margin-top,5px);
+      }
+      .price{
+        @include rem(font-size,28px);
+        color: #ea4a4a;
+      }
+      .count{
+        @include rem(font-size,24px);
+        color: #f48210;
+        background: url("../images/play.png") no-repeat left center;
+        @include rem(background-size,25px auto);
+        @include rem(padding-left,36px);
+        i{
+          font-style: normal;
+        }
+      }
+      .playIcon{
+        background: none;
+        background-size: 0;
+      }
+      .teacher{
+        @include rem(font-size,28px);
+        color: #323232;
+        strong{
+          font-weight: normal;
+        }
+      }
+    }
+  }
+  &::before{
+    position: absolute;
+    bottom: 0;
+    content:'';
+    @include rem(left,24px);
+    @include rem(width,703px);
+    border-bottom: 1px solid #e1e1e1;
+  }
+  &:first-child{
+    border-top: 1px solid #e1e1e1;
+  }
+}
+
+//修改默认弹窗样式
+.msgbox{
+  @include rem(border-radius,20px!important);
+  width: 80%!important;
+}
+.msgbox-btns{
+  @include rem(height,96px!important);
+  @include rem(inline-height,96px!important);
+}
+.msgbox-message{
+  @include rem(font-size,32px!important);
+  @include rem(line-height,52px!important);
+}
+.msgbox-title{
+  @include rem(font-size,36px!important);
+  color: #323232!important;
+}
+.msgbox-content{
+  @include rem(padding,90px 30px 45px!important);
+}
+
+//提示跳转页面
+.tips-wrap{
+  .tips-content{
+    @include rem(width,640px);
+    @include rem(margin,50px auto 0);
+    text-align: center;
+    .tips_icon{
+      background: url("../images/tips.png") no-repeat center;
+      display: block;
+      @include rem(width,70px);
+      @include rem(height,69px);
+      background-size: auto 100%;
+      margin: 0 auto;
+    }
+    .error_icon{
+      background: url("../images/error.png") no-repeat center;
+      background-size: auto 100%;
+    }
+    .count_info{
+      @include rem(margin-top,25px);
+      color: #323232;
+      @include rem(font-size,32px);
+      @include rem(margin-bottom,60px);
+      .tips_txt{
+        @include rem(font-size,36px);
+        @include rem(margin-bottom,15px);
+      }
+      .count{
+        @include rem(font-size,36px);
+        color: #2883e0;
+      }
+    }
+  }
+  .btnBox{
+    font-size: 0;
+    @include rem(width,472px);
+    margin: 0 auto;
+    a{
+      @include rem(font-size,36px);
+      border:1px solid #999;
+      @include rem(border-radius,5px);
+      // @include prefix((border-radius: 5px));
+      display: inline-block;
+      @include rem(width,200px);
+      @include rem(height,80px);
+      color: #646464;
+      @include rem(line-height,80px);
+      text-align: center;
+      @include rem(margin-right,70px);
+      &:last-child{
+        @include rem(margin-right,0);
+      }
+    }
+    .goStudy{
+      background-color: #2883e0;
+      border-color: #2883e0;
+      color: #fff;
+    }
+  }
+}
+
+//优化按钮样式
+.mint-button--danger{
+  background-color: #ed2a2a!important;
+  @include rem(border-radius,5px!important);
+  &:active{
+    background-color: #d63c3f!important;
+  }
+}
+.mint-button--primary{
+  background-color: #2883e0!important;
+  @include rem(border-radius,5px!important);
+  &:active{
+    background-color: #257ad1!important;
+  }
+}
+.mint-button::after{
+  height: 0;
+}
+
+//通用按钮
+.item_btn{
+  @include rem(width,100px);
+  @include rem(height,42px);
+  background-color: #2883e0;
+  @include rem(font-size,26px);
+  color: #fff;
+  @include rem(line-height,42px);
+  text-align: center;
+  @include rem(border-radius,5px);
+}
+.active_btn{
+  border:1px solid #c5c4c4;
+  background-color: #fff;
+  color:#999;
+  @include rem(width,105px);
+}
+.center_btn{
+  @include rem(width,120px);
+  border:1px solid #c5c4c4;
+  background-color: #fff;
+  color:#999;
+}
+//新版视频列表
+.class_wrap{
+  background-color: #fff;
+  @include rem(padding,0 24px);
+  .class_item{
+    @include flexbox();
+    @include flex-between();
+    @include rem(padding,36px 0);
+    border-bottom: 1px solid #eee;
+    .img_box{
+      position: relative;
+      display: block;
+      @include rem(height,208px);
+      img{
+        @include rem(width,346px);
+        @include rem(height,208px);
+      }
+      .vip_tag{
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include rem(width,78px);
+        @include rem(height,78px);
+        background: url("../images/vip_class.png") no-repeat center;
+        background-size: 100%;
+      }
+    }
+    .class_info{
+      @include rem(width,338px);
+      @include rem(height,208px);
+      a{
+        display: block;
+      }
+      .video_title{
+        @include rem(font-size,30px);
+        color: #333;
+        @include text-overflow(1);
+      }
+      .video_intro{
+        @include rem(font-size,24px);
+        color: #666;
+        @include text-overflow(3);
+        @include rem(margin-top,8px);
+        @include rem(height,108px);
+        @include rem(line-height,38px);
+      }
+      .bottom{
+        @include rem(font-size,24px);
+        @include rem(margin-top,10px);
+        .play_again{
+          color: #2883e0;
+        }
+        .play_time{
+          color: #999;
+        }
+        .play_num{
+          @include rem(font-size,24px);
+          color: #999;
+          background: url(../images/video_icon_b.png) no-repeat left center;
+          @include rem(background-size,24px auto);
+          @include rem(padding-left,32px);
+        }
+      }
+    }
+  }
+}
+//关注列表  
+.res_wrap{
+  background-color: #fff;
+  @include rem(padding,0 24px);
+  @include rem(margin-bottom,20px);
+  .item_btn{
+    @include rem(margin-top,16px);
+  }
+  .class_list{
+    border-bottom: 0 none;
+    margin-top: 0;
+    @include rem(padding-top,20px);
+    border-top: 1px solid #eee;
+    .res_title{
+      @include rem(font-size,28px);
+      @include rem(margin-bottom,20px);
+      color: #999;
+      span{
+        color: #2883e0;
+      }
+    }
+    .class_video{
+      padding: 0;
+    }
+  }
+  .res_item{
+    @include rem(padding,36px 0);
+    .teacher_info{
+      @include flexbox();
+      @include flex-between();
+      .teacher_img{
+        @include rem(width,80px);
+        @include rem(height,80px);
+        border-radius: 50%;
+      }
+      .info_box{
+        @include rem(width,456px);
+        h2{
+          @include rem(font-size,32px);
+          color:#222;
+        }
+        p{
+          @include rem(font-size,28px);
+          color: #999;
+          @include text-overflow(1);
+        }
+      }
+    }
+    .intro_box{
+      @include rem(font-size,28px);
+      color: #666;
+      @include rem(max-height,126px);
+      @include rem(margin-top,10px);
+      overflow: hidden;
+    }
+    .more_box{
+      @include rem(margin-top,22px);
+    }
+    .more_btn{
+      display: none;
+      background: url(../images/more_down.png) no-repeat center;
+      @include rem(width,27px);
+      @include rem(height,15px);
+      @include rem(background-size,27px);
+    }
+    .up{
+      background: url("../images/more_up.png") no-repeat center;
+      @include rem(background-size,27px auto);
+    }
+  }
+}
+
+//无内容提示
+.no-content{
+  width: 100%;
+  @include rem(height,320px);
+  // img{
+  //   @include rem(width,134px);
+  //   @include rem(height,auto);
+  //   margin: 0 auto;
+  //   display: block;
+  // }
+  // p{
+  //   @include rem(font-size,28px);
+  //   color: #646464;
+  //   text-align: center;
+  //   @include rem(margin-top,50px);
+  // }
+}
+//无收藏
+.no_collect{
+  background: url("../images/no_collect.png") no-repeat center;
+  @include rem(background-size,277px auto);
+}
+//无关注
+.no_res{
+  background: url("../images/no_res.png") no-repeat center;
+  @include rem(background-size,182px auto);
+}
+//无观看
+.no_play{
+  background: url("../images/class.png") no-repeat center;
+  @include rem(background-size,246px auto);
+}
+//无订单
+.no_order{
+  background: url("../images/order.png") no-repeat center;
+  @include rem(background-size,364px auto);
+}
+//无专辑
+.no_video{
+  background: url("../images/video.png") no-repeat center;
+  @include rem(background-size,325px auto);
+  @include rem(margin-top,120px);
+  position: absolute;
+}
+
+//课程详情页
+.teacher_content{
+  .common_title{
+    border-bottom: 0 none;
+  }
+}
+
+/**
+ * 自定义弹窗
+ */
+ .mask{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.4);
+  position: fixed;
+  top: 0;
+  left:0;
+  bottom: 0;
+  z-index: 98;
+ }
+.agreementMask{
+  .word{
+    position: fixed;
+    z-index: 99;
+    background: white;
+    @include rem(width,568px);
+    left:50%;
+    top:50%;
+    -webkit-transform:translate3d(-50%,-50%,0);
+    transform:translate3d(-50%,-50%,0);
+    @include rem(border-radius,15px);
+    h2{
+      @include rem(font-size,36px);
+      text-align: center;
+      @include rem(margin,30px 0);
+      color: #323232;
+    }
+    .wordContent{
+      font-family: '微软雅黑';
+      @include rem(font-size,28px);
+      overflow: scroll;
+      @include rem(padding,0 30px 50px 30px);
+      &::-webkit-scrollbar{
+        display: none;
+      }
+      color: #646464;
+      border-bottom: 1px solid #e1e1e1;
+    }
+    .wordbtn{
+      @include rem(font-size,28px);
+      color: #2882e0;
+      text-align: center;
+      display: block;
+      @include rem(padding,30px 0);
+    }
+    .pop_txt{
+      @include rem(font-size,32px);
+      color: #323232;
+      text-align: center;
+      @include rem(line-height,48px);
+      @include rem(padding-top,70px);
+    }
+    .vip_btn{
+      display: block;
+      @include rem(margin,50px auto 0);
+      @include rem(width,438px);
+      @include rem(height,90px);
+      @include rem(border-radius,10px);
+      background:linear-gradient(45deg, #ff7209 20%, #ffa409); 
+      background:-webkit-linear-gradient(45deg, #ff7209 20%, #ffa409);
+      @include rem(line-height,90px);
+      text-align: center;
+      span{
+        @include rem(font-size,30px);
+        color: #fff;
+        display: inline-block;
+        background:url('../images/vip_mz.png') no-repeat left center;
+        @include rem(padding-left, 98px);
+        @include rem(background-size,auto 42px);
+      }
+    }
+    .login_txt{
+      @include rem(font-size,26px);
+      color: #999;
+      text-align: center;
+      background: url("../images/title_arrow.png") no-repeat right center;
+      @include rem(background-size,10px auto);
+      @include rem(margin,25px auto 40px);
+      display: block;
+      // @include rem(padding-right,3px);
+      @include rem(width,248px);
+    }
+    .popup_btn{
+      @include rem(margin-top,40px);
+      @include rem(font-size,32px);
+      color: #323232;
+      text-align: center;
+      display: block;
+      @include rem(padding,30px 0);
+      border-top: 1px solid #ebebeb;
+    }
+  }
+}

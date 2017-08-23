@@ -1,0 +1,628 @@
+@charset "UTF-8";
+/**
+ * @desc 去掉单位
+ */
+/**
+ * @desc 将一个值转成rem
+ */
+/**
+ * @desc 将一个或者多个px值转成rem
+ */
+/**
+ * @desc 获取列表第一个
+ */
+/**
+ * @desc 获取列表最后一个
+ */
+/**
+ * @desc 向列表前面插入
+ */
+/**
+ * @desc 向列表指定位置插入
+ */
+/**
+ * @desc 替换列表的某个元素 $recursive 是否全部替换
+ */
+/**
+ * @desc 替换列表某个位置
+ */
+/**
+ * @desc 删除列表某个元素 $recursive 是否删除所有
+ */
+/**
+ * @desc 删除列表指定位置元素
+ */
+/**
+ * @desc 截取列表中的一部分
+ */
+/**
+ * @desc 列表变成字符串
+ */
+/**
+ * @desc 将列表部分元素前置
+ */
+/**
+ * @desc 列表是否存在
+ */
+/**
+ * @desc 字符串分隔
+ */
+/**
+ * @desc 字符串重复
+ */
+/**
+ * @desc 字符串替换
+ */
+/*!
+ *  Fonts.css -- Cross-platform Chinese fonts solution
+ *
+ *  Copyright (C) 2013-2015 Zeno Zeng
+ *  Released under the MIT license
+ *
+ *  Github: https://github.com/zenozeng/fonts.css
+ */
+/**
+ * @param $line       超出显示省略号的行数，默认：1
+ * @param $substract  为预留区域百分比%，默认：0
+ */
+/**
+ * @param $property       css属性
+ * @param $values         css属性值
+ * @param $support-ie     是否对不支持rem的浏览器使用px
+ * @param $base           基准字体大小，如果不传会搜索全局变量 $base-font，如果没有默认为 16px
+ */
+/**
+ * @desc  绘制箭头 http://lugolabs.com/caret
+ * @param $width
+ * @param $border-width
+ * @param $direction: top bottom left right
+ * @param $background-color
+ * @param $position 默认relative
+ */
+/**
+ * @desc  三角形
+ * @param $width
+ * @param $height
+ * @param $color
+ * @param $direction: top bottom left right
+ */
+/**
+ * @desc 通过背景图实现三角形
+ */
+/**
+ * @param $direction: horizontal vertical both
+ */
+/**
+ * @param $min   min-width
+ * @param $max   max-width
+ */
+/**
+ * @param $filename
+ * @param $retina-filename   多个或者一个
+ * @param $ratio             多个或者一个
+ * @param $background-size
+ */
+/**
+ * @param $color
+ * @param $direction: top bottom left right vertical all radius,  default: all
+ */
+/**
+ * @param $color
+ * @param $direction: top bottom left right vertical all,  default: all
+ * @param $pseudo: after before, default: after
+ */
+/**
+ * @param $color
+ * @param $direction: top bottom left right vertical all radius,  default: all
+ * @param $pseudo: after before, default: after
+ * @param $radius default: 1px
+ */
+/**
+ * @desc  气泡提示: http://kazzkiq.github.io/balloon.css/
+ * @param $direction:            top bottom left right
+ * @param $bg                    气泡提示背景颜色
+ * @param $trangle-width         气泡小三角形宽度
+ * @param $trangle-height        气泡小三角形高度
+ * @param $color                 气泡文字颜色
+ * @param $font                  气泡文字大小
+ */
+/**
+ * @param $height  线高  default: 1px
+ * @param $space   线距离文字两边的距离 default: 0.5em
+ * @param $color   线颜色 default: inherit
+ * @param $style   border-style default: solid
+ * @param $adjust  线距离底部的距离，默认垂直居中 default: false
+ * @param $double  是否需要两条线
+ */
+/**
+ * [flexbox description] css3伸缩盒
+ * @return {[type]} [description]
+ */
+/**
+ * [hc description] 水平居中
+ * @return {[type]} [description]
+ */
+/**
+ * [vc description] 垂直居中
+ * @return {[type]} [description]
+ */
+/**
+ * [between description] 两端对齐
+ * @return {[type]} [description]
+ */
+/**
+ * [between description] 两端对齐
+ * @return {[type]} [description]
+ */
+/**
+ * 设置
+ */
+.set-content .mint-cell::before {
+  left: 0; }
+
+.set-content .mint-cell::after {
+  height: 0;
+  border: 0 none; }
+
+.set-content .mint-cell:active {
+  color: #323232; }
+
+.set-content .mint-cell-allow-right::after {
+  border: solid 1px #c8c8cd;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-bottom-width: 0;
+  border-left-width: 0; }
+
+.set-content .mint-button--large {
+  width: 17.575rem;
+  height: 2.25rem;
+  margin: 1.25rem auto; }
+
+/**
+ * 支付页面
+ */
+.pay_new .agreementMask .word .wordContent {
+  height: 12.5rem;
+  overflow-y: scroll; }
+
+.pay_new .mint-button--danger {
+  width: 17.575rem;
+  margin: 0.75rem auto 1.5rem; }
+
+.pay_new .pay_txt {
+  padding: 0.5rem 0.6rem;
+  background-color: #fff;
+  margin-bottom: 0.5rem; }
+  .pay_new .pay_txt .user_icon {
+    width: 1.375rem;
+    height: 1.375rem;
+    border-radius: 50%; }
+  .pay_new .pay_txt h2 {
+    font-size: 0.7rem;
+    color: #333;
+    margin-left: 0.3rem;
+    font-weight: normal;
+    line-height: 1.375rem;
+    max-width: 6.45rem;
+    width: auto !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%; }
+  .pay_new .pay_txt p {
+    margin-left: 1.375rem;
+    font-size: 0.7rem;
+    line-height: 1.375rem;
+    color: #666; }
+    .pay_new .pay_txt p span {
+      font-size: 0.75rem;
+      color: #ff0000; }
+  .pay_new .pay_txt .login_box {
+    font-size: 0.65rem;
+    color: #999; }
+    .pay_new .pay_txt .login_box .login_btn {
+      display: inline-block;
+      width: 3.5rem;
+      height: 1.45rem;
+      background-color: #2883e0;
+      text-align: center;
+      line-height: 1.45rem;
+      font-size: 0.65rem;
+      border-radius: 0.125rem; }
+      .pay_new .pay_txt .login_box .login_btn:active {
+        color: #fff; }
+
+.pay_new .pay_info {
+  background-color: #fff;
+  padding: 0 0.6rem; }
+  .pay_new .pay_info .pay_vip .pay_title {
+    font-size: 0.7rem;
+    color: #333;
+    padding: 0.75rem 0; }
+    .pay_new .pay_info .pay_vip .pay_title span {
+      color: #ed2a2a;
+      font-size: 0.6rem; }
+  .pay_new .pay_info .pay_vip .vip_wrap {
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -moz-justify-content: space-between;
+    -o-box-pack: justify;
+    -o-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .pay_new .pay_info .pay_vip .vip_wrap .select_item {
+      width: 8.5rem;
+      height: 5.25rem;
+      display: block;
+      border: 1px solid #eee;
+      margin-bottom: 0.75rem;
+      text-align: center; }
+      .pay_new .pay_info .pay_vip .vip_wrap .select_item.active {
+        border-color: #ff0000; }
+      .pay_new .pay_info .pay_vip .vip_wrap .select_item .select_info {
+        width: 6.6rem;
+        padding: 1rem 0 0; }
+        .pay_new .pay_info .pay_vip .vip_wrap .select_item .select_info .real_price {
+          font-size: 1rem;
+          color: #ff0000; }
+          .pay_new .pay_info .pay_vip .vip_wrap .select_item .select_info .real_price span {
+            font-size: 0.7rem;
+            padding-right: 0.125rem; }
+        .pay_new .pay_info .pay_vip .vip_wrap .select_item .select_info .month {
+          font-size: 0.6rem;
+          color: #666; }
+        .pay_new .pay_info .pay_vip .vip_wrap .select_item .select_info .per_price {
+          font-size: 0.6rem;
+          color: #999;
+          margin-top: 0.15rem;
+          padding: 0 0.5rem; }
+      .pay_new .pay_info .pay_vip .vip_wrap .select_item .sub_select_title {
+        height: 100%;
+        background-color: #eeeded;
+        width: 1.5rem;
+        overflow: hidden; }
+        .pay_new .pay_info .pay_vip .vip_wrap .select_item .sub_select_title span {
+          font-size: 0.7rem;
+          color: #666;
+          text-align: center;
+          display: block;
+          line-height: 1.2rem;
+          padding: 1.425rem 0.2rem; }
+        .pay_new .pay_info .pay_vip .vip_wrap .select_item .sub_select_title .text_two {
+          padding: 0.85rem 0.2rem; }
+  .pay_new .pay_info .pay_vip .select_wrap {
+    padding-bottom: 0.75rem; }
+    .pay_new .pay_info .pay_vip .select_wrap .select_item {
+      width: 8.5rem;
+      height: 5.25rem;
+      display: block;
+      border: 1px solid #eee;
+      text-align: center; }
+      .pay_new .pay_info .pay_vip .select_wrap .select_item.active {
+        border-color: #ff0000; }
+      .pay_new .pay_info .pay_vip .select_wrap .select_item .select_info {
+        width: 6.6rem;
+        padding: 1rem 0 0; }
+        .pay_new .pay_info .pay_vip .select_wrap .select_item .select_info .real_price {
+          font-size: 1rem;
+          color: #ff0000; }
+          .pay_new .pay_info .pay_vip .select_wrap .select_item .select_info .real_price span {
+            font-size: 0.7rem;
+            padding-right: 0.125rem; }
+        .pay_new .pay_info .pay_vip .select_wrap .select_item .select_info .month {
+          font-size: 0.6rem;
+          color: #666; }
+        .pay_new .pay_info .pay_vip .select_wrap .select_item .select_info .per_price {
+          font-size: 0.6rem;
+          color: #999;
+          margin-top: 0.15rem;
+          padding: 0 0.5rem; }
+      .pay_new .pay_info .pay_vip .select_wrap .select_item .sub_select_title {
+        height: 100%;
+        background-color: #eeeded;
+        width: 1.5rem;
+        overflow: hidden; }
+        .pay_new .pay_info .pay_vip .select_wrap .select_item .sub_select_title span {
+          font-size: 0.7rem;
+          color: #666;
+          text-align: center;
+          display: block;
+          line-height: 1.2rem;
+          padding: 1.425rem 0.2rem; }
+        .pay_new .pay_info .pay_vip .select_wrap .select_item .sub_select_title .text_two {
+          padding: 0.85rem 0.2rem; }
+
+.pay_new .type_wrap {
+  margin-top: 0.5rem; }
+  .pay_new .type_wrap .type_item {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 0 0.6rem;
+    line-height: 2.25rem;
+    font-size: 0.7rem;
+    color: #646464; }
+    .pay_new .type_wrap .type_item .pay_price {
+      font-size: 0.9rem;
+      color: #ff0000; }
+  .pay_new .type_wrap .pay_type {
+    display: block;
+    height: 2.3rem;
+    background: #fff url("../images/no.png") no-repeat;
+    background-position: 17.125rem center;
+    background-size: 1rem auto; }
+    .pay_new .type_wrap .pay_type .pay_icon {
+      width: 1.25rem;
+      margin-top: 0.5rem; }
+    .pay_new .type_wrap .pay_type .info_txt {
+      margin: 0.35rem 0 0 0.5rem; }
+      .pay_new .type_wrap .pay_type .info_txt p {
+        line-height: 0.9rem; }
+      .pay_new .type_wrap .pay_type .info_txt .type_name {
+        font-size: 0.6rem;
+        color: #323232; }
+      .pay_new .type_wrap .pay_type .info_txt .type_des {
+        font-size: 0.5rem;
+        color: #646464;
+        line-height: 0.6rem; }
+  .pay_new .type_wrap .selected {
+    background: #fff url("../images/select.png") no-repeat;
+    background-position: 17.125rem center;
+    background-size: 1rem auto; }
+
+.pay_new .agreement .agreement_txt {
+  line-height: 1.75rem;
+  border-bottom: 1px solid #eee;
+  font-size: 0.65rem;
+  padding: 0 0.6rem;
+  color: #999999; }
+  .pay_new .agreement .agreement_txt .checkbox {
+    vertical-align: middle;
+    margin-top: -0.075rem;
+    margin-right: 0.3rem;
+    -webkit-appearance: none;
+    border: 1px solid #dadada;
+    width: 0.725rem;
+    height: 0.725rem;
+    border-radius: 0.125rem; }
+    .pay_new .agreement .agreement_txt .checkbox:checked {
+      background: url("../images/checkbox.png") no-repeat center;
+      background-size: 80%; }
+  .pay_new .agreement .agreement_txt a {
+    color: #999; }
+
+.pay_new .agreement .vip_note {
+  padding: 0 0.6rem 1rem 0.6rem; }
+  .pay_new .agreement .vip_note h2 {
+    font-size: 0.65rem;
+    color: #666;
+    margin: 0.4rem 0; }
+  .pay_new .agreement .vip_note p {
+    font-size: 0.6rem;
+    color: #999;
+    line-height: 0.95rem; }
+
+/**
+ * 个人中心
+ */
+.user_center .center_top {
+  background-color: #fff;
+  padding: 0.6rem 0.6rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8.575rem;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  z-index: 99; }
+  .user_center .center_top .center_box {
+    width: 100%;
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -moz-justify-content: space-between;
+    -o-box-pack: justify;
+    -o-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .user_center .center_top .center_box .user_info {
+      display: box;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -moz-flex;
+      display: -webkit-flex;
+      display: flex;
+      /* 09版 */
+      -webkit-box-pack: center;
+      -webkit-box-align: center;
+      /* 12版 */
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      -o-justify-content: center;
+      justify-content: center;
+      flex-flow: column wrap; }
+      .user_center .center_top .center_box .user_info img {
+        width: 3.2rem;
+        height: 3.2rem;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%; }
+      .user_center .center_top .center_box .user_info .vip_info {
+        font-size: 0.65rem;
+        color: #999;
+        text-align: center;
+        margin-top: 0.95rem; }
+        .user_center .center_top .center_box .user_info .vip_info span {
+          color: #ff0000; }
+      .user_center .center_top .center_box .user_info .user_icon {
+        position: relative;
+        width: 3.2rem;
+        height: 3.2rem;
+        margin: 0 auto; }
+        .user_center .center_top .center_box .user_info .user_icon .vip_icon {
+          position: absolute;
+          top: 0;
+          right: -0.15rem;
+          width: 1.25rem;
+          height: 1.25rem;
+          background: url("../images/icon_vip.png") no-repeat center;
+          background-size: 1.25rem auto; }
+    .user_center .center_top .center_box a {
+      font-size: 0.7rem;
+      color: #999999;
+      display: inline-block;
+      height: 1.25rem;
+      line-height: 1.15rem;
+      text-align: center; }
+    .user_center .center_top .center_box .set_btn {
+      background: url("../images/set.png") no-repeat left center;
+      background-size: 0.875rem auto;
+      padding-left: 1.15rem; }
+    .user_center .center_top .center_box .vip_btn {
+      background: url("../images/vip_btn.png") no-repeat center;
+      width: 3.8rem;
+      background-size: 3.775rem auto; }
+    .user_center .center_top .center_box .res_vip {
+      background: url("../images/icon_xd.png") no-repeat left center;
+      background-size: 0.7rem auto;
+      padding-left: 1rem; }
+  .user_center .center_top .menu_nav {
+    margin-top: 1rem;
+    display: box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -moz-justify-content: space-between;
+    -o-box-pack: justify;
+    -o-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .user_center .center_top .menu_nav a {
+      font-size: 0.7rem;
+      color: #999999;
+      border: 1px solid #999;
+      border-radius: 0.625rem;
+      height: 1.25rem;
+      width: 3.75rem;
+      text-align: center;
+      line-height: 1.2rem; }
+      .user_center .center_top .menu_nav a.active {
+        background-color: #2883e0;
+        color: #fff;
+        border: 1px solid #2883e0; }
+    .user_center .center_top .menu_nav .my_order {
+      position: relative; }
+
+.user_center .content_wrap {
+  margin-top: 9.075rem; }
+  .user_center .content_wrap .recomend {
+    margin-top: 0.5rem; }
+  .user_center .content_wrap .column_title {
+    font-size: 0.7rem;
+    padding: 0 0.6rem;
+    border-bottom: 1px solid #eee;
+    line-height: 2rem;
+    background-color: #fff;
+    color: #333; }
+  .user_center .content_wrap .order_wrap {
+    margin-top: 0.5rem; }
+    .user_center .content_wrap .order_wrap .order_item {
+      background-color: #fff;
+      margin-bottom: 0.5rem; }
+    .user_center .content_wrap .order_wrap .list_item {
+      border-bottom: 1px solid #f0f0f0;
+      padding: 0 0.6rem;
+      line-height: 2.25rem;
+      font-size: 0.7rem; }
+      .user_center .content_wrap .order_wrap .list_item h2 {
+        font-size: 0.8rem;
+        color: #333; }
+      .user_center .content_wrap .order_wrap .list_item span {
+        color: #323232; }
+      .user_center .content_wrap .order_wrap .list_item p {
+        color: #646464; }
+      .user_center .content_wrap .order_wrap .list_item .order_price {
+        font-size: 0.9rem;
+        color: #ff0000; }
+      .user_center .content_wrap .order_wrap .list_item .pay_btn {
+        width: 4.2rem;
+        height: 1.4rem;
+        background-color: #ed2a2a;
+        color: #fff;
+        line-height: 1.4rem;
+        text-align: center;
+        border-radius: 0.125rem;
+        margin-top: 0.5rem; }
+      .user_center .content_wrap .order_wrap .list_item .pay_success {
+        background-color: #2883e0; }
+      .user_center .content_wrap .order_wrap .list_item .pay_miss {
+        background-color: #cccbcb; }
+
+.count_order {
+  position: absolute;
+  display: block;
+  right: -0.4rem;
+  top: -0.45rem;
+  font-size: 0.5rem;
+  background-color: #ff0000;
+  color: #fff;
+  height: 0.9rem;
+  line-height: 0.9rem;
+  padding: 0 0.275rem;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  border-radius: 18px; }
+
+.tab-order .mint-navbar {
+  border-bottom: 1px solid #e1e1e1; }
+  .tab-order .mint-navbar .mint-tab-item-label {
+    font-size: 0.7rem;
+    position: relative;
+    color: #646464; }
+    .tab-order .mint-navbar .mint-tab-item-label .count_order {
+      right: 0.4rem; }
+  .tab-order .mint-navbar .mint-tab-item.is-selected {
+    border-bottom: 2px solid #2883e0;
+    color: #2883e0;
+    margin-bottom: 0; }
+
+.tab-order .nav_bar {
+  position: fixed;
+  top: 6.9rem;
+  left: 0;
+  height: 2.25rem;
+  width: 100%;
+  z-index: 99; }
+
+.tab-order .tab_container {
+  margin-top: 9.15rem; }
+
+/*# sourceMappingURL=maps/user_center.css.map */

@@ -1,0 +1,418 @@
+@charset "utf-8";
+@import "../../node_modules/mixins-sass/src/mixins";
+@import "../mui/mixins.scss";
+/**
+ * 教程详情页样式
+ */
+.class_info{
+	position: relative;
+	.player_mask{
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 1;
+		background:#000 url(".././images/videojs-logo.jpg") no-repeat center;
+		background-size: 100% auto;
+		width: 100%;
+		@include rem(height,477);
+	}
+	.player-video-box{
+		width: 100%;
+		@include rem(height, 477px);
+		.video-player,.video-js.vjs-custom-skin{
+			height: 100%;
+		}
+	}
+	.class_box{
+		background-color: #fff;
+		@include rem(margin-bottom,20px);
+		.teacher_info{
+			@include flexbox();
+			@include flex-between();
+			border-bottom: 1px solid #eee;
+			@include rem(padding,32px 24px);
+			.teacher_img{
+				@include rem(width,80px);
+				@include rem(height,80px);
+				border-radius: 50%;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.txt_box{
+				display: inline-block;
+				vertical-align: middle;
+				@include rem(width,462px);
+				@include rem(margin-left,5px);
+				h2{
+					@include rem(font-size,32px);
+					color: #333;
+				}
+				p{
+					@include rem(font-size,26px);
+					color: #999;
+					@include text-overflow(1);
+				}
+			}
+			.item_btn{
+				@include rem(margin-top,16px);
+			}
+		}
+		.class_title{
+			@include rem(font-size,32px);
+			color: #333;
+			@include rem(line-height,110px);
+			@include rem(padding,0 24px);
+			@include text-overflow(1);
+		}
+	}
+	.class_detail{
+	  .nav_bar{
+	    @include rem(height,90px);
+	    border-bottom: 1px solid #E0E0E0;
+	    .mint-tab-item.is-selected{
+	      @include rem(border-bottom,5px solid #2883e0); 
+	      margin-bottom:0;
+	      .mint-tab-item-label{
+	        color: #2883e0;
+	      }
+	    }
+	    .mint-tab-item-label{
+	      @include rem(font-size,32px);
+	      color: #666;
+	    }
+	  }
+	  .tab_container{
+	    @include rem(padding-bottom,110);
+	    .tab_item{
+	      background-color: #fff;
+	      border-bottom: 1px solid #E0E0E0;
+	      h2{
+	        @include rem(font-size,32px);
+	        color: #323232;
+	        font-weight: normal;
+	        @include rem(line-height,90px);
+	        @include rem(height,90px);
+	        @include rem(padding-left,40px);
+	        border-bottom: 1px solid #E0E0E0;
+	      }
+	      section{
+	        @include rem(font-size,30px);
+	        color: #666;
+	        text-indent: 2em;
+	        @include rem(line-height,48px);
+	        @include rem(padding,30px 24px);
+	      }
+	    }
+	    .purchase_box{
+	      position: fixed;
+	      bottom: 0;
+	      left: 0;
+	      width: 100%;
+	      .tips{
+	        @include rem(font-size,28px);
+	        color: #333333;
+	        @include rem(padding-left,24px);
+	        background-color: #f5f5f5;
+	        @include rem(line-height,65px);
+	      }
+	      .btn_box{
+	        @include flexbox();
+	        background-color: #fff;
+	        @include rem(height,90px);
+	        .price_wrap{
+	          @include rem(padding-left,30px);
+	          width: 70%;
+	          color: #333;
+	          @include rem(font-size,30px);
+	          @include rem(line-height,90px);
+	          border-top: 1px solid #eee;
+	        }
+	        .purchase_btn{
+	          width: 30%;
+	          background:linear-gradient(45deg, #ff7209 20%, #ffa409); 
+	          background:-webkit-linear-gradient(45deg, #ff7209 20%, #ffa409);
+	          border: 0 none;
+	          color: #fff;
+	          @include rem(font-size,32px); 
+	        }
+	      }
+	    }
+	    .comment_btn{
+	      position: fixed;
+	      left: 0;
+	      bottom: 0;
+	      background-color: #2883e0;
+	      color: #fff;
+	      @include rem(font-size,36px);
+	      width: 100%;
+	      @include rem(height,90px);
+	      border:0 none;
+	    }
+	    .inputBox{
+	      background-color: #fff;
+	      width: 100%;
+	      @include rem(height,370px);
+	      @include rem(padding,30px 24px);
+	      textarea{
+	        @include rem(width,703px);
+	        @include rem(height,140px);
+	        @include rem(font-size,24px);
+	        @include rem(padding,10px);
+	        @include prefix((border-radius: 0));
+	        -webkit-appearance:none;
+	        border-color: #e1e1e1;
+	        overflow: hidden;
+	      }
+	      p{
+	        width: 100%;
+	        @include rem(font-size,24px);
+	        color: #8b8b8b;
+	        strong{
+	          font-weight: normal;
+	        }
+	      }
+	      .report_btn{
+	        width: 100%;
+	        @include rem(height,90px);
+	        background-color: #2883e0;
+	        color: #fff;
+	        @include rem(font-size,36px);
+	        @include rem(line-height,90px);
+	        text-align: center;
+	        @include rem(margin-top,15px);
+	        border: 0 none;
+	        &:active{
+	          background-color: #257ad1;
+	        }
+	      }
+	    }
+	    .play_list{
+	      .play_item{
+	        background-color: #fff;
+	        @include rem(margin-bottom,30px);
+	        h2{
+	          @include rem(font-size,36px);
+	          color: #333;
+	          @include rem(line-height,90px);
+	          border-bottom: 1px solid #e1e1e1;
+	          @include rem(padding,0 24px); 
+	          @include text-overflow(1);
+	        }
+	        .class_detail{
+	          .class_txt{
+	            @include rem(padding,40px 24px);
+	            border-bottom: 1px solid #e1e1e1;
+	            .detail_info{
+	              @include rem(width,460px);
+	              @include rem(font-size,28px);
+	              color: #333;
+	            }
+	          }
+	          .video_list{
+	            .title_bar{
+	              background-color: #f5f5f5;
+	              color: #323232;
+	              @include rem(font-size,28px);
+	              @include rem(line-height,74px);
+	              @include rem(padding-left,24px);
+	              @include text-overflow(1);
+	              border-bottom: 1px solid #e1e1e1;
+	            }
+	            .mint-cell-wrapper{
+	              .mint-cell-value{
+	                span{
+	                	@include rem(font-size,32px);
+	                  	word-wrap:break-word;
+	                  	word-break:break-all;
+	                }
+	              }
+	            }
+	            .playon{
+	              .mint-cell-wrapper{
+	                .mint-cell-text{
+	                  color: #2883e0;
+	                }
+	                .mint-cell-value{
+	                  span{
+	                    color: #2883e0;
+	                  }
+	                }
+	              }
+	            }
+	            .free_video{
+	            	.mint-cell-wrapper{
+		            	.mint-cell-text{
+		            	   @include rem(margin-left,54px);
+		            	}
+	            	}
+	            }
+	            .looked{
+	              .mint-cell-wrapper{
+	                .mint-cell-text{
+	                  color: #2883e0;
+	                }
+	                .mint-cell-value{
+	                  span{
+	                    color: #2883e0;
+	                  }
+	                }
+	              }
+	            }
+	            .vip_icon{
+	            	@include rem(width,45px);
+	            	@include rem(height,22px);
+	            }
+	            .mint-cell::before{
+	              left: 0;
+	            }
+	            .mint-cell::after{
+	              border-top:0 none;
+	            }
+	            .mint-cell-wrapper{
+	              @include rem(padding,36px 24px);
+	              // overflow: hidden;
+	              .mint-cell-title{
+	                color: #333333;
+	                @include rem(font-size,32px);
+	                white-space: nowrap;
+	                // @include rem(flex,0 0 120px);
+	                flex:1;
+	                -webkit-flex: 1;
+	                align-self:flex-start;
+	              }
+	              .mint-cell-text{
+	                @include rem(line-height,42px);
+	              }
+	              .mint-cell-value{
+	                flex:3; 
+	                -webkit-flex: 3;
+	                span{
+	                  @include text-overflow(2);
+	                  @include rem(line-height,42px);
+	                  color: #333333;
+	                }
+	              }
+	            }
+	          }
+	          .displaylist{
+	            display: block!important;
+	          } 
+	        }
+	      }
+	    }
+	    .no-comment{
+	      @include rem(font-size,28px);
+	      color: #646464;
+	      text-align: center;
+	      background-color: #f5f5f5;
+	      @include rem(padding,200px 0);
+	    }
+	  }
+	}
+}
+.teacher_content{
+	.top_banner{
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 100;
+	}
+	.container{
+		@include rem(margin-top,300px);
+		position: relative;
+		.class_wrap{
+			position: absolute;
+			@include rem(top,112px);
+			left: 0;
+			width: 100%;
+			height: auto;
+		}
+	}
+	.nav_box{
+		position: fixed;
+		width: 100%;
+		@include rem(height,110px);
+		z-index: 100;
+		background-color: #f5f5f5;
+		@include rem(padding-top,20px);
+	}
+	.teacher_nav{
+		border-bottom: 1px solid #eaeaea;
+		@include rem(height,90px);
+		.mint-tab-item.is-selected{
+			margin-bottom: 0;
+			.mint-tab-item-label{
+				color: #2883e0;
+			}
+		}
+		.mint-tab-item-label{
+			@include rem(font-size,28px);
+			color: #646464;
+		}
+	}
+}
+
+/**
+ * 通用列表
+ */
+.message_list{
+  background-color: #fff;
+  ul li{
+    position: relative;
+    &::before{
+      @include rem(left,168px);
+      @include rem(width,559px);
+      position: absolute;
+      bottom: 0;
+      content:'';
+      border-bottom: 1px solid #e1e1e1;
+    }
+    .item{
+      @include flexbox();
+      @include rem(padding,30px 24px 30px 45px);
+    }
+    img{
+      @include rem(width,100px);
+      @include rem(height,100px);
+      border-radius: 50%;
+      align-self:flex-start;
+    }
+    .message_box{
+      flex:1;
+      @include rem(margin-left,30px);
+      .user_info{
+      	@include rem(height,40px);
+        @include rem(font-size,24px);
+        color: #2883e0;
+        .time{
+          color: #999999;
+        }
+      }
+      .message_txt{
+        @include rem(font-size,32px);
+        color: #333333;
+        @include rem(margin-top,20px);
+        @include rem(line-height,42px);
+        @include rem(height,84px);
+        overflow: hidden;
+        .txtInfo{
+          word-wrap:break-word;
+          word-break:break-all;
+        }
+      }
+      .more_btn{
+        @include rem(font-size,24px);
+        display: none;
+        color: #646464;
+        background: url("../images/more_down.png") no-repeat right center;
+        @include rem(background-size,27px auto);
+        @include rem(padding-right,30px);
+        @include rem(margin-top,10px);
+      }
+      .up{
+        background: url("../images/more_up.png") no-repeat right center;
+        @include rem(background-size,27px auto);
+      }
+    }
+  }
+}

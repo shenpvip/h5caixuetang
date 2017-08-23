@@ -1,0 +1,17 @@
+@charset "utf-8";
+/**
+ * 播放页面
+ */
+@import "../../node_modules/mixins-sass/src/mixins";
+// @import "../mui/variables.scss";
+@import "../mui/mixins.scss";
+
+.player-content{
+	.player-video-box{
+		width: 100%;
+		@include rem(height, 477px);
+		.video-player,.video-js.vjs-custom-skin{
+			height: 100%;
+		}
+	}
+}

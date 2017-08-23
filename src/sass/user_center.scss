@@ -1,0 +1,503 @@
+@charset "utf-8";
+@import "../../node_modules/mixins-sass/src/mixins";
+@import "../mui/mixins.scss";
+
+/**
+ * 设置
+ */
+.set-content{
+	.mint-cell::before{
+		left: 0;
+	}
+	.mint-cell::after{
+		height: 0;
+		border: 0 none;
+	}
+	.mint-cell:active{
+		color: #323232;
+	}
+	.mint-cell-allow-right::after{
+		border: solid 1px #c8c8cd;
+		@include rem(width,18px);
+		@include rem(height,18px);
+		border-bottom-width: 0;
+		border-left-width: 0;
+	}
+	.mint-button--large{
+		@include rem(width,703px);
+		@include rem(height,90px);
+		@include rem(margin,50px auto);
+	}
+}
+
+/**
+ * 支付页面
+ */
+.pay_new{
+	.agreementMask .word .wordContent{
+		@include rem(height,500px);
+		overflow-y: scroll;
+	}
+ 	.mint-button--danger{
+ 		@include rem(width,703px);
+ 		@include rem(margin,30px auto 60px);
+ 	}
+ 	.pay_txt{
+ 		@include rem(padding,20px 24px);
+ 		background-color: #fff;
+ 		@include rem(margin-bottom,20px);
+ 		.user_icon{
+ 			@include rem(width,55px);
+ 			@include rem(height,55px);
+ 			border-radius: 50%;
+ 		}
+ 		h2{
+ 			@include rem(font-size,28px);
+ 			color: #333;
+ 			@include rem(margin-left,12px);
+ 			font-weight: normal;
+ 			@include rem(line-height,55px);
+ 			@include rem(max-width,258px);
+ 			@include rem(width,auto!important);
+ 			@include text-overflow(1);
+ 		}
+ 		p{
+ 			@include rem(margin-left,55px);
+ 			@include rem(font-size,28px);
+ 			@include rem(line-height,55px);
+ 			color: #666;
+ 			span{
+ 				@include rem(font-size,30px);
+ 				color: #ff0000;
+ 			}
+ 		}
+ 		.login_box{
+ 			@include rem(font-size,26px);
+ 			color: #999;
+ 			.login_btn{
+ 				display: inline-block;
+ 				@include rem(width,140px);
+ 				@include rem(height,58px);
+ 				background-color: #2883e0;
+ 				text-align: center;
+ 				@include rem(line-height,58px);
+ 				@include rem(font-size,26px);
+ 				@include rem(border-radius,5px);
+ 				&:active{
+ 					color: #fff;
+ 				}
+ 			}
+ 		}
+ 	}
+ 	.pay_info{
+ 		background-color: #fff;
+ 		@include rem(padding,0 24px);
+ 		.pay_vip{
+ 			.pay_title{
+ 				@include rem(font-size,28px);
+ 				color: #333;
+ 				@include rem(padding,30px 0);
+ 				span{
+ 					color: #ed2a2a;
+ 					@include rem(font-size,24px);
+ 				}
+ 			}
+ 			.vip_wrap{
+ 				@include flexbox();
+			    flex-flow:row wrap;
+			    @include flex-between();
+ 				.select_item{
+ 					@include rem(width,340px);
+ 					@include rem(height,210px);
+ 					display: block;
+ 					border: 1px solid #eee;
+ 					@include rem(margin-bottom,30px);
+ 					text-align: center;
+ 					&.active{
+ 						border-color: #ff0000;
+ 					}
+					.select_info{
+						@include rem(width,264px);
+						@include rem(padding,40px 0 0);
+						.real_price{
+							@include rem(font-size,40px);
+							color: #ff0000;
+							span{
+								@include rem(font-size,28px);
+								@include rem(padding-right,5px);
+							}
+						}
+						.month{
+							@include rem(font-size,24px);
+							color: #666;
+						}
+	 					.per_price{
+							@include rem(font-size,24px);
+							color: #999;
+							@include rem(margin-top,6px);
+							@include rem(padding,0 20px);
+						}
+					}
+					.sub_select_title{
+						height: 100%;
+						background-color: #eeeded;
+						@include rem(width,60px);
+						overflow: hidden;
+						span{
+							@include rem(font-size,28px);
+							color: #666;
+							text-align: center;
+							display: block;
+							@include rem(line-height,48px);
+							@include rem(padding,57px 8px);
+						}
+						.text_two{
+							@include rem(padding,34px 8px);
+						}
+					}
+ 				}
+ 			}
+ 			.select_wrap{
+ 				@include rem(padding-bottom,30px);
+ 				.select_item{
+ 					@include rem(width,340px);
+ 					@include rem(height,210px);
+ 					display: block;
+ 					border: 1px solid #eee;
+ 					text-align: center;
+ 					&.active{
+ 						border-color: #ff0000;
+ 					}
+					.select_info{
+						@include rem(width,264px);
+						@include rem(padding,40px 0 0);
+						.real_price{
+							@include rem(font-size,40px);
+							color: #ff0000;
+							span{
+								@include rem(font-size,28px);
+								@include rem(padding-right,5px);
+							}
+						}
+						.month{
+							@include rem(font-size,24px);
+							color: #666;
+						}
+	 					.per_price{
+							@include rem(font-size,24px);
+							color: #999;
+							@include rem(margin-top,6px);
+							@include rem(padding,0 20px);
+						}
+					}
+					.sub_select_title{
+						height: 100%;
+						background-color: #eeeded;
+						@include rem(width,60px);
+						overflow: hidden;
+						span{
+							@include rem(font-size,28px);
+							color: #666;
+							text-align: center;
+							display: block;
+							@include rem(line-height,48px);
+							@include rem(padding,57px 8px);
+						}
+						.text_two{
+							@include rem(padding,34px 8px);
+						}
+					}
+ 				}
+ 			}
+ 		}
+ 	}
+ 	.type_wrap{
+ 		@include rem(margin-top,20px);
+ 		.type_item{
+ 			background-color: #fff;
+ 			border-bottom: 1px solid #eee;
+ 			@include rem(padding,0 24px);
+ 			@include rem(line-height,90px);
+ 			@include rem(font-size,28px);
+ 			color: #646464;
+ 			.pay_price{
+ 				@include rem(font-size,36px);
+ 				color: #ff0000;
+ 			}
+ 		}
+ 		.pay_type{
+ 			display: block;
+ 			@include rem(height,92px);
+ 			background:#fff url("../images/no.png") no-repeat;
+ 			@include rem(background-position,685px center);
+ 			@include rem(background-size,40px auto);
+ 			.pay_icon{
+ 				@include rem(width,50px);
+ 				@include rem(margin-top,20px);
+ 			}
+ 			.info_txt{
+ 				@include rem(margin,14px 0 0 20px);
+ 				p{
+ 					@include rem(line-height,36px);
+ 				}
+ 				.type_name{
+ 					@include rem(font-size,24px);
+ 					color: #323232;
+ 				}
+ 				.type_des{
+ 					@include rem(font-size,20px);
+ 					color: #646464;
+ 					@include rem(line-height,24px);
+ 				}
+ 			}
+ 		}
+ 		.selected{
+ 			background:#fff url("../images/select.png") no-repeat;
+ 			@include rem(background-position,685px center);
+ 			@include rem(background-size,40px auto);
+ 		}
+ 	}
+ 	.agreement{
+ 		// background-color: #fff;
+ 		.agreement_txt{
+ 			@include rem(line-height,70px);
+ 			border-bottom: 1px solid #eee;
+ 			@include rem(font-size,26px);
+ 			@include rem(padding,0 24px);
+ 			color: #999999;
+ 			.checkbox{
+				vertical-align: middle;
+				@include rem(margin-top,-3px);
+				@include rem(margin-right,12px);
+				-webkit-appearance: none;
+				border: 1px solid #dadada;
+				@include rem(width,29px);
+				@include rem(height,29px);
+				@include rem(border-radius,5px);
+				&:checked{
+					background: url("../images/checkbox.png") no-repeat center;
+					background-size: 80%;
+				}
+ 			}
+ 			a{
+ 				color: #999;
+ 			}
+ 		}
+ 		.vip_note{
+ 			@include rem(padding,0 24px 40px 24px);
+ 			h2{
+ 				@include rem(font-size,26px);
+ 				color: #666;
+ 				@include rem(margin,16px 0);
+ 			}
+ 			p{
+ 				@include rem(font-size,24px);
+ 				color: #999;
+ 				@include rem(line-height,38px);
+ 			}
+ 		}
+ 	}
+}
+
+/**
+ * 个人中心
+ */
+.user_center{
+	.center_top{
+		background-color: #fff;
+		@include rem(padding,24px 24px 0);
+		position: fixed;
+		top: 0;
+		left: 0;
+		@include rem(height,343px);
+		width: 100%;
+		border-bottom: 1px solid #eee;
+		z-index: 99;
+		.center_box{
+			width: 100%;
+			@include flexbox();
+			@include flex-between();
+			.user_info{
+				@include flexbox();
+				@include flex-hc();
+				flex-flow:column wrap;
+				img{
+					@include rem(width,128px);
+					@include rem(height,128px);
+					@include prefix((border-radius: 50%));
+				}
+				.vip_info{
+					@include rem(font-size,26px);
+					color: #999;
+					text-align: center;
+					@include rem(margin-top,38px);
+					span{
+						color: #ff0000;
+					}
+				}
+				.user_icon{
+					position: relative;
+					@include rem(width,128px);
+					@include rem(height,128px);
+					margin: 0 auto;
+					.vip_icon{
+						position: absolute;
+						@include rem(top,0);
+						@include rem(right,-6px);
+						@include rem(width,50px);
+						@include rem(height,50px);
+						background: url("../images/icon_vip.png") no-repeat center;
+						@include rem(background-size,50px auto);
+					}
+				}
+			}
+			a{
+				@include rem(font-size,28px);
+				color: #999999;
+				display: inline-block;
+				@include rem(height,50px);
+				@include rem(line-height,46px);
+				text-align: center;
+			}
+			.set_btn{
+				background: url("../images/set.png") no-repeat left center;
+				@include rem(background-size,35px auto);
+				@include rem(padding-left,46px);
+			}
+			.vip_btn{
+				background: url("../images/vip_btn.png") no-repeat center;
+				@include rem(width,152px);
+				@include rem(background-size,151px auto);
+			}
+			.res_vip{
+				background: url('../images/icon_xd.png') no-repeat left center;
+				@include rem(background-size,28px auto);
+				@include rem(padding-left,40px);
+			}
+		}
+		.menu_nav{
+			@include rem(margin-top,40px);
+			@include flexbox();
+			@include flex-between();
+			a{
+				@include rem(font-size,28px);
+				color: #999999;
+				border: 1px solid #999;
+				@include rem(border-radius,25px);
+				@include rem(height,50px);
+				@include rem(width,150px);
+				text-align: center;
+				@include rem(line-height,48px);
+				&.active{
+					background-color: #2883e0;
+					color: #fff;
+					border: 1px solid #2883e0;
+				}
+			}
+			.my_order{
+				position: relative;
+			}
+		}
+	}
+	.content_wrap{
+		@include rem(margin-top,363px);
+		.recomend{
+			@include rem(margin-top,20px);
+		}
+		.column_title{
+		  @include rem(font-size,28px);
+		  @include rem(padding,0 24px);
+		  border-bottom: 1px solid #eee;
+		  @include rem(line-height,80px);
+		  background-color: #fff;
+		  color: #333;
+		}
+		.order_wrap{
+			@include rem(margin-top,20px);
+			.order_item{
+				background-color: #fff;
+				@include rem(margin-bottom,20px);
+			}
+			.list_item{
+				border-bottom: 1px solid #f0f0f0;
+				@include rem(padding,0 24px);
+				@include rem(line-height,90px);
+				@include rem(font-size,28px);
+				h2{
+					@include rem(font-size,32px);
+					color: #333;
+				}
+				span{
+					color: #323232;
+				}
+				p{
+					color: #646464;
+				}
+				.order_price{
+					@include rem(font-size,36px);
+					color: #ff0000;
+				}
+				.pay_btn{
+					@include rem(width,168px);
+					@include rem(height,56px);
+					background-color: #ed2a2a;
+					color: #fff;
+					@include rem(line-height,56px);
+					text-align: center;
+					@include rem(border-radius,5px);
+					@include rem(margin-top,20px);
+				}
+				.pay_success{
+					background-color: #2883e0;
+				}
+				.pay_miss{
+					background-color: #cccbcb;
+				}
+			}
+		}
+	}
+}
+//小红点
+.count_order{
+	position: absolute;
+	display: block;
+	@include rem(right,-16px);
+	@include rem(top,-18px);
+	@include rem(font-size,20px);
+	background-color: #ff0000;
+	color: #fff;
+	@include rem(height,36px);
+	@include rem(line-height,36px);
+	@include rem(padding,0 11px);
+	@include prefix((border-radius: 18px));
+}
+
+.tab-order{
+	.mint-navbar{
+		border-bottom: 1px solid #e1e1e1;
+		.mint-tab-item-label{
+			@include rem(font-size,28px);
+			position: relative;
+			color: #646464;
+			.count_order{
+				@include rem(right,16px);
+			}
+		}
+		.mint-tab-item.is-selected{
+			border-bottom: 2px solid #2883e0;
+			color: #2883e0;
+			margin-bottom: 0;
+		}
+	}
+	.nav_bar{
+		position: fixed;
+		@include rem(top,276px);
+		left: 0;
+		@include rem(height,90px);
+		width: 100%;
+		z-index: 99;
+	}
+	.tab_container{
+		@include rem(margin-top,366px);
+	}
+}

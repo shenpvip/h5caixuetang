@@ -1,0 +1,326 @@
+@charset "UTF-8";
+/**
+ * @desc 去掉单位
+ */
+/**
+ * @desc 将一个值转成rem
+ */
+/**
+ * @desc 将一个或者多个px值转成rem
+ */
+/**
+ * @desc 获取列表第一个
+ */
+/**
+ * @desc 获取列表最后一个
+ */
+/**
+ * @desc 向列表前面插入
+ */
+/**
+ * @desc 向列表指定位置插入
+ */
+/**
+ * @desc 替换列表的某个元素 $recursive 是否全部替换
+ */
+/**
+ * @desc 替换列表某个位置
+ */
+/**
+ * @desc 删除列表某个元素 $recursive 是否删除所有
+ */
+/**
+ * @desc 删除列表指定位置元素
+ */
+/**
+ * @desc 截取列表中的一部分
+ */
+/**
+ * @desc 列表变成字符串
+ */
+/**
+ * @desc 将列表部分元素前置
+ */
+/**
+ * @desc 列表是否存在
+ */
+/**
+ * @desc 字符串分隔
+ */
+/**
+ * @desc 字符串重复
+ */
+/**
+ * @desc 字符串替换
+ */
+/*!
+ *  Fonts.css -- Cross-platform Chinese fonts solution
+ *
+ *  Copyright (C) 2013-2015 Zeno Zeng
+ *  Released under the MIT license
+ *
+ *  Github: https://github.com/zenozeng/fonts.css
+ */
+/**
+ * @param $line       超出显示省略号的行数，默认：1
+ * @param $substract  为预留区域百分比%，默认：0
+ */
+/**
+ * @param $property       css属性
+ * @param $values         css属性值
+ * @param $support-ie     是否对不支持rem的浏览器使用px
+ * @param $base           基准字体大小，如果不传会搜索全局变量 $base-font，如果没有默认为 16px
+ */
+/**
+ * @desc  绘制箭头 http://lugolabs.com/caret
+ * @param $width
+ * @param $border-width
+ * @param $direction: top bottom left right
+ * @param $background-color
+ * @param $position 默认relative
+ */
+/**
+ * @desc  三角形
+ * @param $width
+ * @param $height
+ * @param $color
+ * @param $direction: top bottom left right
+ */
+/**
+ * @desc 通过背景图实现三角形
+ */
+/**
+ * @param $direction: horizontal vertical both
+ */
+/**
+ * @param $min   min-width
+ * @param $max   max-width
+ */
+/**
+ * @param $filename
+ * @param $retina-filename   多个或者一个
+ * @param $ratio             多个或者一个
+ * @param $background-size
+ */
+/**
+ * @param $color
+ * @param $direction: top bottom left right vertical all radius,  default: all
+ */
+/**
+ * @param $color
+ * @param $direction: top bottom left right vertical all,  default: all
+ * @param $pseudo: after before, default: after
+ */
+/**
+ * @param $color
+ * @param $direction: top bottom left right vertical all radius,  default: all
+ * @param $pseudo: after before, default: after
+ * @param $radius default: 1px
+ */
+/**
+ * @desc  气泡提示: http://kazzkiq.github.io/balloon.css/
+ * @param $direction:            top bottom left right
+ * @param $bg                    气泡提示背景颜色
+ * @param $trangle-width         气泡小三角形宽度
+ * @param $trangle-height        气泡小三角形高度
+ * @param $color                 气泡文字颜色
+ * @param $font                  气泡文字大小
+ */
+/**
+ * @param $height  线高  default: 1px
+ * @param $space   线距离文字两边的距离 default: 0.5em
+ * @param $color   线颜色 default: inherit
+ * @param $style   border-style default: solid
+ * @param $adjust  线距离底部的距离，默认垂直居中 default: false
+ * @param $double  是否需要两条线
+ */
+/**
+ * [flexbox description] css3伸缩盒
+ * @return {[type]} [description]
+ */
+/**
+ * [hc description] 水平居中
+ * @return {[type]} [description]
+ */
+/**
+ * [vc description] 垂直居中
+ * @return {[type]} [description]
+ */
+/**
+ * [between description] 两端对齐
+ * @return {[type]} [description]
+ */
+/**
+ * [between description] 两端对齐
+ * @return {[type]} [description]
+ */
+/**
+ * 首页样式
+ */
+.home_page .follow {
+  background: url("../images/follow.png") no-repeat;
+  background-size: 100%;
+  width: 3.45rem;
+  height: 3.45rem;
+  position: fixed;
+  right: 0.6rem;
+  bottom: 10%; }
+
+.home_page .home_title {
+  background: #fff url("../images/title.png") no-repeat center center;
+  width: 100%;
+  height: 3.3rem;
+  background-size: auto 2.425rem;
+  border-bottom: 1px solid #e7e7e7; }
+
+.home_page .index_num {
+  display: box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+  background-color: #fff;
+  border-bottom: 1px solid #e7e7e7; }
+  .home_page .index_num .index_item {
+    margin: auto;
+    width: 33.33333%;
+    border-right: 1px solid #ddd;
+    text-align: center; }
+    .home_page .index_num .index_item:last-child {
+      border: 0 none; }
+    .home_page .index_num .index_item .title {
+      font-size: 0.6rem;
+      color: #333333; }
+    .home_page .index_num .index_item .data {
+      font-size: 0.9rem;
+      margin: 0.075rem 0;
+      color: #ff3d3e;
+      background: url("../images/data_up.png") no-repeat;
+      background-position: 0.8rem center;
+      background-size: 0.425rem 0.375rem; }
+    .home_page .index_num .index_item .data_down {
+      color: #009900;
+      background: url("../images/data_down.png") no-repeat;
+      background-position: 0.65rem center;
+      background-size: 0.425rem 0.375rem; }
+    .home_page .index_num .index_item .txt {
+      font-size: 0.6rem;
+      color: #ff3d3e; }
+    .home_page .index_num .index_item .green {
+      color: #009900; }
+
+.home_page .nav_box {
+  display: box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  padding: 0.8rem 0.6rem;
+  border-bottom: 1px solid #e7e7e7;
+  background-color: #fff;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -moz-justify-content: space-between;
+  -o-box-pack: justify;
+  -o-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 0.5rem; }
+  .home_page .nav_box a {
+    display: block;
+    width: 5.5rem;
+    line-height: 2.25rem;
+    text-align: center;
+    border-radius: 0.125rem;
+    font-size: 0.65rem;
+    color: #222; }
+  .home_page .nav_box i {
+    display: inline-block;
+    width: 2.6rem;
+    height: 2.6rem;
+    vertical-align: middle; }
+  .home_page .nav_box p {
+    line-height: 0.65rem;
+    margin-top: 0.5rem; }
+  .home_page .nav_box .class_icon {
+    background: url("../images/all_class.png") no-repeat;
+    background-size: 100%; }
+  .home_page .nav_box .teacher_icon {
+    background: url("../images/all_teacher.png") no-repeat;
+    background-size: 100%; }
+  .home_page .nav_box .my_class_icon {
+    background: url("../images/my_class.png") no-repeat;
+    background-size: 100%; }
+
+.home_page .vip_btn {
+  display: block;
+  width: 100%;
+  height: 2.45rem;
+  background: linear-gradient(45deg, #ff7209 20%, #ffa409);
+  background: -webkit-linear-gradient(45deg, #ff7209 20%, #ffa409);
+  margin: 0.5rem 0;
+  line-height: 2.45rem;
+  text-align: center; }
+  .home_page .vip_btn span {
+    font-size: 0.75rem;
+    color: #fff;
+    display: inline-block;
+    background: url("../images/vip_mz.png") no-repeat left center;
+    padding-left: 2.45rem;
+    background-size: auto 1.05rem; }
+
+.home_page .partner_wrap {
+  background-color: #fff;
+  border-bottom: 1px solid #e7e7e7;
+  margin-top: 0.5rem;
+  padding: 0 0.6rem; }
+  .home_page .partner_wrap .center_title {
+    font-size: 0.75rem;
+    color: #333333;
+    text-align: center;
+    line-height: 1.8rem;
+    font-weight: normal; }
+  .home_page .partner_wrap .partner_list {
+    margin-left: -0.7rem; }
+    .home_page .partner_wrap .partner_list .item_list {
+      width: 3.85rem;
+      height: 1.375rem;
+      margin-bottom: 0.5rem;
+      margin-left: 0.7rem; }
+      .home_page .partner_wrap .partner_list .item_list img {
+        width: 3.85rem;
+        height: 1.375rem;
+        border: 1px solid #dcdbdb; }
+
+.home_page .footer {
+  background-color: #fff;
+  margin-top: 0.5rem;
+  padding: 0.75rem 0;
+  text-align: center;
+  font-size: 0.6rem;
+  color: #323232; }
+
+.home_page .agreementMask .word {
+  width: 14.2rem;
+  height: 11.15rem; }
+  .home_page .agreementMask .word .wordContent {
+    padding: 0;
+    border-bottom: 0 none; }
+  .home_page .agreementMask .word img {
+    width: 7.25rem;
+    height: 7.25rem;
+    margin: 1.25rem auto 0.75rem;
+    display: block; }
+  .home_page .agreementMask .word p {
+    text-align: center;
+    font-size: 0.6rem;
+    color: #323232; }
+
+/*# sourceMappingURL=maps/index.css.map */
